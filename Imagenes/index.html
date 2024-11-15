@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visión Anaglifo y Estereoscópica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <h1>Visión Anaglifo</h1>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#gallery1">Personal</a></li>
+                <li><a href="#gallery2">Objeto</a></li>
+                <li><a href="#gallery3">Infraestructura de edificios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imagen antes del primer carrusel -->
+    <section id="stereo-image-1">
+        <h2>Imagen estereoscópica única left/right Personal</h2>
+        <div class="image-container">
+            <img src="images/rl1.JPG" alt="Imagen Estereoscópica Left/Right">
+        </div>
+    </section>
+
+    <!-- Primer carrusel -->
+    <section id="gallery1">
+        <h2>Galería de Imágenes Anaglifo Personal</h2>
+        <div class="carousel-container" id="carousel1">
+            <button class="carousel-btn prev-btn" onclick="moveSlide(-1, 'carousel1')">&#10094;</button>
+            <div class="carousel">
+                <div class="slide">
+                    <img src="images/cercano1.JPG" alt="Foco Cercano">
+                    <div class="overlay">
+                        <h3>Profundidad: Cercano</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/medio1.JPG" alt="Foco Medio">
+                    <div class="overlay">
+                        <h3>Profundidad: Medio</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/lejano1.JPG" alt="Foco Lejano">
+                    <div class="overlay">
+                        <h3>Profundidad: Lejano</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next-btn" onclick="moveSlide(1, 'carousel1')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Imagen antes del segundo carrusel -->
+    <section id="stereo-image-2">
+        <h2>Imagen estereoscópica única left/right Objeto</h2>
+        <div class="image-container">
+            <img src="images/rl2.JPG" alt="Imagen Estereoscópica Left/Right">
+        </div>
+    </section>
+
+    <!-- Segundo carrusel -->
+    <section id="gallery2">
+        <h2>Galería de Imágenes Anaglifo Objeto</h2>
+        <div class="carousel-container" id="carousel2">
+            <button class="carousel-btn prev-btn" onclick="moveSlide(-1, 'carousel2')">&#10094;</button>
+            <div class="carousel">
+                <div class="slide">
+                    <img src="images/cercano2.JPG" alt="Foco Cercano">
+                    <div class="overlay">
+                        <h3>Profundidad: Cercano</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/medio2.JPG" alt="Foco Medio">
+                    <div class="overlay">
+                        <h3>Profundidad: Medio</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/lejano2.JPG" alt="Foco Lejano">
+                    <div class="overlay">
+                        <h3>Profundidad: Lejano</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next-btn" onclick="moveSlide(1, 'carousel2')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Imagen antes del tercer carrusel -->
+    <section id="stereo-image-3">
+        <h2>Imagen estereoscópica única left/right Infraestructura de edificios</h2>
+        <div class="image-container">
+            <img src="images/rl3.JPG" alt="Imagen Estereoscópica Left/Right">
+        </div>
+    </section>
+
+    <!-- Tercer carrusel -->
+    <section id="gallery3">
+        <h2>Galería de Imágenes Anaglifo Infraestructura de edificios</h2>
+        <div class="carousel-container" id="carousel3">
+            <button class="carousel-btn prev-btn" onclick="moveSlide(-1, 'carousel3')">&#10094;</button>
+            <div class="carousel">
+                <div class="slide">
+                    <img src="images/cercano3.JPG" alt="Foco Cercano">
+                    <div class="overlay">
+                        <h3>Profundidad: Cercano</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/medio3.JPG" alt="Foco Medio">
+                    <div class="overlay">
+                        <h3>Profundidad: Medio</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/lejano3.JPG" alt="Foco Lejano">
+                    <div class="overlay">
+                        <h3>Profundidad: Lejano</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn next-btn" onclick="moveSlide(1, 'carousel3')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Francisco Sánchez Estrada. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
